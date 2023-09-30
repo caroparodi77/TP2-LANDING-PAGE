@@ -1,9 +1,9 @@
-const listaProductos = document.querySelector("#list-group");
-// const container = document.querySelector ("#descripcion")
+// const listaProductos = document.querySelector("#list-group");
+const container = document.querySelector ("#container")
 let productos;
 
 const cargarProductos = async () => {
-  localStorage.clear();
+  // localStorage.clear();
   listaProductos.innerHTML = "";
 
   productos = localStorage.getItem("productos");
@@ -25,33 +25,17 @@ const cargarProductos = async () => {
 };
 
 const createProducts = (producto) => {
-    const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
+    // const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
     const productoHTML = `
       <article>
-          <h2 data-id="${producto.id}">${producto.nombre}</h2>
-          <h3 >${producto.descripcionCorta}</h3>
-          <a href="productos.html" target="_blank"><i class="bi bi-plus-circle-fill" id="iconoMas"></i></a>
+          <h2 >${producto.nombre}</h2>
+          <h3 >${producto.descripcionLarga}</h3>
+          <a href="productos.html" target="_blank" data-id="${producto.id}"><i class="bi bi-plus-circle-fill" id="iconoMas"></i></a>
           <img src="img/${imagen}">
       </article>
     `;
   
-    listaProductos.innerHTML += productoHTML;
+    container.innerHTML += productoHTML;
   };
 
   cargarProductos();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -2,9 +2,9 @@
     {
         "id": "producto1",
         "nombre": "Lentes Ibiza negros",
-        "imagen": "imgenes/lentes1.jpg",
-        "Descripcion corta": "Lentes de sol media montura color negro",
-        "Descripcion larga": "Lentes de sol clásicos, media montura, color negro con protección uv 400",
+        "imagen": "lentes 1.jpg",
+        "descripcionCorta": "Lentes de sol media montura color negro",
+        "DescripcionLarga": "Lentes de sol clásicos, media montura, color negro con protección uv 400",
         "Precio": 20000, 
         "Puntuación": "*****"
     },
@@ -12,9 +12,9 @@
     {
         "id": "producto2",
         "nombre": "Lentes Tulum negros",
-        "imagen": "imgenes/lentes2.jpg",
-        "Descripcion corta": "Lentes de sol media montura, marco metálico,color negro",
-        "Descripcion larga": "Lentes de sol, media montura, marco metálico, color negro con protección uv 400",
+        "imagen": "lentes 2.jpg",
+        "descripcionCorta": "Lentes de sol media montura, marco metálico,color negro",
+        "DescripcionLarga": "Lentes de sol, media montura, marco metálico, color negro con protección uv 400",
         "Precio": 28000, 
         "Puntuación": "*****"
     },
@@ -22,9 +22,9 @@
     {
         "id": "producto3",
         "nombre": "Lentes Waikiki marrones",
-        "imagen": "imgenes/lentes3.jpg",
-        "Descripcion corta": "Lentes de sol marco dorado-blanco color marrón",
-        "Descripcion larga": "Lentes de sol marco metálico blaco-dorado, color marrón con protección uv 400",
+        "imagen": "lentes 3.jpg",
+        "descripcionCorta": "Lentes de sol marco dorado-blanco color marrón",
+        "DescripcionLarga": "Lentes de sol marco metálico blaco-dorado, color marrón con protección uv 400",
         "Precio": 24000, 
         "Puntuación": "*****"
     },
@@ -32,9 +32,9 @@
     {
         "id": "producto4",
         "nombre": "Lentes Maui negros",
-        "imagen": "imgenes/lentes4.jpg",
-        "Descripcion corta": "Lentes de sol media montura, marco negro marmolado, color negro",
-        "Descripcion larga": "Lentes de sol, media montura, marco negro marmolado, color negro con protección uv 400",
+        "imagen": "lentes 4.jpg",
+        "descripcionCorta": "Lentes de sol media montura, marco negro marmolado, color negro",
+        "DescripcionLarga": "Lentes de sol, media montura, marco negro marmolado, color negro con protección uv 400",
         "Precio": 20000, 
         "Puntuación": "*****"
     },
@@ -42,9 +42,9 @@
     {
         "id": "producto5",
         "nombre": "Lentes Copacabana colores",
-        "imagen": "imgenes/lentes5.jpg",
-        "Descripcion corta": "Lentes de sol redondos, marco metálico, colores varios",
-        "Descripcion larga": "Lentes de sol redondos tipo Lennon con marco metálico, colores varios, con protección uv 400",
+        "imagen": "lentes 5.jpg",
+        "descripcionCorta": "Lentes de sol redondos, marco metálico, colores varios",
+        "DescripcionLarga": "Lentes de sol redondos tipo Lennon con marco metálico, colores varios, con protección uv 400",
         "Precio": 22000, 
         "Puntuación": "*****"
     },
@@ -52,9 +52,9 @@
     {
         "id": "producto6",
         "nombre": "Lentes Mykonos marrones, print",
-        "imagen": "imgenes/lentes1.jpg",
-        "Descripcion corta": "Lentes de sol marco carey print color marrón",
-        "Descripcion larga": "Lentes de sol con marco de carey print, color marrón, con protección uv 400",
+        "imagen": "lentes 6.jpg",
+        "descripcionCorta": "Lentes de sol marco carey print color marrón",
+        "DescripcionLarga": "Lentes de sol con marco de carey print, color marrón, con protección uv 400",
         "Precio": 28000, 
         "Puntuación": "*****"
     }
