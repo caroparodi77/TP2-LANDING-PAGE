@@ -27,13 +27,18 @@ const cargarProductos = async () => {
 const createProducts = (producto) => {
     const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
     const productoHTML = `
-      <article>
-          <h2>${producto.nombre}</h2>
-          <h3 >${producto.descripcionCorta}</h3>
-         
-          <a type="button" class="btn btn-primary" href="productos.html?id=${producto.id}"> VER</a>  
-          <img src="img/${imagen}">
-      </article>
+      <div class=container>
+        <div class= "text-center mt-5" >
+            <h3 >${producto.nombre}</h3>
+            <p >${producto.descripcionCorta}</p>
+        </div>  
+        <div class="d-flex justify-content-center"> 
+            <img src="img/${imagen}">
+        </div>
+        <div class="d-flex justify-content-center">
+            <a type="button" class="btn btn-secondary mt-3 mb-5" href="productos.html?id=${producto.id}"> Ver más</a>
+        </div> 
+      </div>
     `;
   
     listaProductos.innerHTML += productoHTML;

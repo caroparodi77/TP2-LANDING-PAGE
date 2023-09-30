@@ -12,6 +12,7 @@ function buscarProducto(){
         let producto ="";
         let html =""; 
         productos.forEach(function(prod){
+
             if(prod.id == idProducto){
                 producto = prod;
             }
@@ -20,10 +21,12 @@ function buscarProducto(){
         if(producto != ""){
           const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
             html += `
-            <div>${producto.nombre}</div>
-            <div >${producto.DescripcionLarga}</div>
-            <img src="img/${imagen}" alt="${producto.codigo};">                         
-            <div class="precio" >${producto.Precio}</div>                      
+            <h1 class="text-center" "fw-bold">${producto.nombre}</h1>
+            <p class="text-center" >${producto.DescripcionLarga}</p>
+            <div class="d-flex justify-content-center">
+            <img src="img/${imagen} "class=foto" alt="${producto.codigo};"> 
+            </div>                        
+            <div class="d-flex justify-content-center" >${producto.Precio}</div>                      
             `
             document.querySelector("#detalleProducto").innerHTML = html;
 

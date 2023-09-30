@@ -1,0 +1,9 @@
+.headerPrincipal {
+    height: 30vh;
+    background-image: url(../img/fondo\ sol.jpg);
+    background-size: cover;
+}
+
+.mainPrincipal {
+    background-color:#F1EFEF;
+}
