@@ -1,41 +1,53 @@
-// const listaProductos = document.querySelector("#list-group");
-const container = document.querySelector ("#container")
-let productos;
+const valores = window.location.search;
+const urlParams = new URLSearchParams(valores);
+const idProducto = urlParams.get('id');
 
-const cargarProductos = async () => {
-  // localStorage.clear();
-  listaProductos.innerHTML = "";
 
-  productos = localStorage.getItem("productos");
+function buscarProducto(){
+    let productos = localStorage.getItem("productos");
+    
+    if(productos != null){      
+         
+        productos = JSON.parse(productos);
+        let producto ="";
+        let html =""; 
+        productos.forEach(function(prod){
+            if(prod.id == idProducto){
+                producto = prod;
+            }
+        })
 
-  if (productos == null) {
-    const response = await fetch("json/productos.json");
-    productos = await response.json();
-    // esto me permite leer el archivo json
+        if(producto != ""){
+          const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
+            html += `
+            <div>${producto.nombre}</div>
+            <div >${producto.DescripcionLarga}</div>
+            <img src="img/${imagen}" alt="${producto.codigo};">                         
+            <div class="precio" >${producto.Precio}</div>                      
+            `
+            document.querySelector("#detalleProducto").innerHTML = html;
 
-    localStorage.setItem("productos", JSON.stringify(productos));
-    // con esto transformo el objeto js en un string json
-  }
+            estrellada(producto.Puntuacion);
+        }
+    }
+        
+}
 
-  if (typeof productos == "string") {
-    productos = JSON.parse(productos);
-  }
 
-  productos.forEach(createProducts);
-};
 
-const createProducts = (producto) => {
-    // const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
-    const productoHTML = `
-      <article>
-          <h2 >${producto.nombre}</h2>
-          <h3 >${producto.descripcionLarga}</h3>
-          <a href="productos.html" target="_blank" data-id="${producto.id}"><i class="bi bi-plus-circle-fill" id="iconoMas"></i></a>
-          <img src="img/${imagen}">
-      </article>
-    `;
-  
-    container.innerHTML += productoHTML;
-  };
+function estrellada(Puntuacion){
+    const numero = Puntuacion.length;
+    const estrellasOscuras = 5 - numero;
+    html ="";
+    for(i = 0; i<numero; i++){
+        html += "⭐";
+    }
+    for(i =0; i<estrellasOscuras;i++){
+        html += "⚪";
+    }
+    document.querySelector("#estrellas").innerHTML = html;
 
-  cargarProductos();
+}
+
+
+buscarProducto(); 
