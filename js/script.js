@@ -28,18 +28,16 @@ const createProducts = (producto) => {
     const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
     const productoHTML = `
    
-      <div>
-      <div class="card mt-5"style="width: 18rem;">
-        <img src="img/${imagen}" class="card-img-top" alt="...">
-      <div class="card-body">
-        <h5 class="card-title">${producto.nombre}</h5>
-        <p class="card-text">${producto.descripcionCorta}</p>
-        <a href="productos.html?id=${producto.id}" class="btn btn-primary">Ver más</a>
-      </div>
-      </div>
-      </div>
-    
-
+    <div>
+    <div class="card mt-5"style="width: 18rem;">
+      <img src="img/${imagen}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${producto.nombre}</h5>
+      <p class="card-text">${producto.descripcionCorta}</p>
+      <a href="productos.html?id=${producto.id}" class="btn btn-primary">Ver más</a>
+    </div>
+    </div>
+    </div>
 
     `;
   

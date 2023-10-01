@@ -1,3 +1,4 @@
+
 const valores = window.location.search;
 const urlParams = new URLSearchParams(valores);
 const idProducto = urlParams.get('id');
@@ -32,15 +33,15 @@ function buscarProducto(){
         if(producto != ""){
           const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
             html += `
-            <h1 class= "text-center" "fw-bold">${producto.nombre}</h1>
-            <p class="text-center" >${producto.DescripcionLarga}</p>
+            <h1 class="hproduct mt-3 text-center" "fw-bold">${producto.nombre}</h1>
+            <p class="pproduct text-center" >${producto.DescripcionLarga}</p>
             <div class="d-flex justify-content-center">
             
             <img src="img/${imagen} "class=foto" alt="${producto.codigo};">
             
             </div>
             <p>${convertirAEstrellas(producto.Puntuación)}</p>                     
-            <div class="d-flex justify-content-center" >${producto.Precio}</div>
+            <div class="d-flex justify-content-center mb-3" >${producto.Precio}</div>
             
                                  
             `
@@ -51,10 +52,6 @@ function buscarProducto(){
     }
         
 }
-
-
-
-
 
 
 buscarProducto(); 

@@ -1,56 +1,61 @@
 
-  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Philosopher:ital,wght@0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Philosopher:ital,wght@0,700;1,400&display=swap');
 
 
-  .titulo {
-    font-family: 'Philosopher', sans-serif;
-    ;
-  }
+.titulo {
+  font-family: 'Philosopher', sans-serif;
+  
+}
 
-  .subtitulo {
-    font-family: 'Mulish', sans-serif;
-  }
+.subtitulo {
+  font-family: 'Mulish', sans-serif;
+}
 
-  .parrafo {
-    font-family: 'Mulish', sans-serif;
-  }
+.parrafo {
+  font-family: 'Mulish', sans-serif;
+}
 
 
-  .card-title {
-    font-family: 'Mulish', sans-serif;
-    font-weight: bold;
-  }
+.card-title {
+  font-family: 'Mulish', sans-serif;
+  font-weight: bold;
+}
 
-  çard-text {
-    font-family: 'Mulish', sans-serif;
-  }
+çard-text {
+  font-family: 'Mulish', sans-serif;
+}
 
 .puntuacion-estrellas {
-    text-align: center;
+  text-align: center;
 }
 
 .estrella-llena {
-    color: gold;
-    font-size: 35px;
-    margin-right: 4px;
+  color: gold;
+  font-size: 35px;
+  margin-right: 4px;
 }
 
 
 .estrella-vacia {
-    color: lightgray;
-    font-size: 35px;
-    margin-right: 4px;
+  color: lightgray;
+  font-size: 35px;
+  margin-right: 4px;
 }
 
+.hproduct {
+  font-family: 'Mulish', sans-serif;
+  
+}
+.pproduct { 
+  font-family: 'Mulish', sans-serif;
+}
 
 /* .headerPrincipal {
-    height: 85vh;
-    background-image: url(../img/fondoagua.jpeg);
-    background-size: cover;
+  height: 85vh;
+  background-image: url(../img/fondoagua.jpeg);
+  background-size: cover;
 } */
 
 /* .mainPrincipal {
-    background-color:#F1EFEF;
+  background-color:#F1EFEF;
 } */
-
-
