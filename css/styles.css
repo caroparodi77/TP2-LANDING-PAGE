@@ -54,32 +54,3 @@
 } */
 
 
-/* <div class= "container">
-      
-       <div class= "text-center mt-5" >
-             <h3 >${producto.nombre}</h3>
-             <p >${producto.descripcionCorta}</p>
-         </div>  
-         <div class="d-flex justify-content-center"> 
-             <img src="img/${imagen}">
-         </div>
-         <div class="d-flex justify-content-center">
-             <a type="button" class="btn btn-secondary mt-3 mb-5" href="productos.html?id=${producto.id}"> Ver más</a>
-         </div>  */
-
-
-
-
-         /* function estrellada(Puntuacion){
-            const numero = Puntuacion.length;
-            const estrellasOscuras = 5 - numero;
-            html ="";
-            for(i = 0; i<numero; i++){
-                html += "⭐";
-            }
-            for(i =0; i<estrellasOscuras;i++){
-                html += "⚪";
-            }
-            document.querySelector("#estrellas").innerHTML = html;
-        
-        } */
