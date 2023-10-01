@@ -1,9 +1,85 @@
-.headerPrincipal {
-    height: 30vh;
-    background-image: url(../img/fondo\ sol.jpg);
-    background-size: cover;
+
+  @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Philosopher:ital,wght@0,700;1,400&display=swap');
+
+
+  .titulo {
+    font-family: 'Philosopher', sans-serif;
+    ;
+  }
+
+  .subtitulo {
+    font-family: 'Mulish', sans-serif;
+  }
+
+  .parrafo {
+    font-family: 'Mulish', sans-serif;
+  }
+
+
+  .card-title {
+    font-family: 'Mulish', sans-serif;
+    font-weight: bold;
+  }
+
+  çard-text {
+    font-family: 'Mulish', sans-serif;
+  }
+
+.puntuacion-estrellas {
+    text-align: center;
 }
 
-.mainPrincipal {
-    background-color:#F1EFEF;
+.estrella-llena {
+    color: gold;
+    font-size: 35px;
+    margin-right: 4px;
 }
+
+
+.estrella-vacia {
+    color: lightgray;
+    font-size: 35px;
+    margin-right: 4px;
+}
+
+
+/* .headerPrincipal {
+    height: 85vh;
+    background-image: url(../img/fondoagua.jpeg);
+    background-size: cover;
+} */
+
+/* .mainPrincipal {
+    background-color:#F1EFEF;
+} */
+
+
+/* <div class= "container">
+      
+       <div class= "text-center mt-5" >
+             <h3 >${producto.nombre}</h3>
+             <p >${producto.descripcionCorta}</p>
+         </div>  
+         <div class="d-flex justify-content-center"> 
+             <img src="img/${imagen}">
+         </div>
+         <div class="d-flex justify-content-center">
+             <a type="button" class="btn btn-secondary mt-3 mb-5" href="productos.html?id=${producto.id}"> Ver más</a>
+         </div>  */
+
+
+
+
+         /* function estrellada(Puntuacion){
+            const numero = Puntuacion.length;
+            const estrellasOscuras = 5 - numero;
+            html ="";
+            for(i = 0; i<numero; i++){
+                html += "⭐";
+            }
+            for(i =0; i<estrellasOscuras;i++){
+                html += "⚪";
+            }
+            document.querySelector("#estrellas").innerHTML = html;
+        
+        } */

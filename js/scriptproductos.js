@@ -2,6 +2,17 @@ const valores = window.location.search;
 const urlParams = new URLSearchParams(valores);
 const idProducto = urlParams.get('id');
 
+function convertirAEstrellas(Puntuación) {
+    const estrellasLlenas = Puntuación.length;
+    const estrellasVacias = 5 - estrellasLlenas;
+
+    const estrellasHTML = '<span class="estrella-llena">★</span>'.repeat(estrellasLlenas) +
+        '<span class="estrella-vacia">☆</span>'.repeat(estrellasVacias);
+
+    return `<p class="puntuacion-estrellas">${estrellasHTML}</p>`;
+}
+
+
 
 function buscarProducto(){
     let productos = localStorage.getItem("productos");
@@ -21,16 +32,21 @@ function buscarProducto(){
         if(producto != ""){
           const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
             html += `
-            <h1 class="text-center" "fw-bold">${producto.nombre}</h1>
+            <h1 class= "text-center" "fw-bold">${producto.nombre}</h1>
             <p class="text-center" >${producto.DescripcionLarga}</p>
             <div class="d-flex justify-content-center">
-            <img src="img/${imagen} "class=foto" alt="${producto.codigo};"> 
-            </div>                        
-            <div class="d-flex justify-content-center" >${producto.Precio}</div>                      
+            
+            <img src="img/${imagen} "class=foto" alt="${producto.codigo};">
+            
+            </div>
+            <p>${convertirAEstrellas(producto.Puntuación)}</p>                     
+            <div class="d-flex justify-content-center" >${producto.Precio}</div>
+            
+                                 
             `
             document.querySelector("#detalleProducto").innerHTML = html;
 
-            estrellada(producto.Puntuacion);
+            
         }
     }
         
@@ -38,19 +54,7 @@ function buscarProducto(){
 
 
 
-function estrellada(Puntuacion){
-    const numero = Puntuacion.length;
-    const estrellasOscuras = 5 - numero;
-    html ="";
-    for(i = 0; i<numero; i++){
-        html += "⭐";
-    }
-    for(i =0; i<estrellasOscuras;i++){
-        html += "⚪";
-    }
-    document.querySelector("#estrellas").innerHTML = html;
 
-}
 
 
 buscarProducto(); 

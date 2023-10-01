@@ -1,4 +1,4 @@
-const listaProductos = document.querySelector("#list-group");
+const listaProductos = document.querySelector("#cards");
 // const container = document.querySelector ("#descripcion")
 let productos;
 
@@ -27,18 +27,20 @@ const cargarProductos = async () => {
 const createProducts = (producto) => {
     const imagen = producto.imagen ?? "pawel-szvmanski-oUOxOSPbcJk-unsplash.jpg";
     const productoHTML = `
-      <div class=container>
-        <div class= "text-center mt-5" >
-            <h3 >${producto.nombre}</h3>
-            <p >${producto.descripcionCorta}</p>
-        </div>  
-        <div class="d-flex justify-content-center"> 
-            <img src="img/${imagen}">
-        </div>
-        <div class="d-flex justify-content-center">
-            <a type="button" class="btn btn-secondary mt-3 mb-5" href="productos.html?id=${producto.id}"> Ver más</a>
-        </div> 
+   
+      <div>
+      <div class="card mt-5"style="width: 18rem;">
+        <img src="img/${imagen}" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">${producto.nombre}</h5>
+        <p class="card-text">${producto.descripcionCorta}</p>
+        <a href="productos.html?id=${producto.id}" class="btn btn-primary">Ver más</a>
       </div>
+      </div>
+      </div>
+    
+
+
     `;
   
     listaProductos.innerHTML += productoHTML;

@@ -5,8 +5,8 @@
         "imagen": "lentes 1.jpg",
         "descripcionCorta": "Lentes de sol media montura color negro",
         "DescripcionLarga": "Lentes de sol clásicos, media montura, color negro con protección uv 400",
-        "Precio": 20000, 
-        "Puntuación": "*****"
+        "Precio": "$AR 20000", 
+        "Puntuación": "****"
     },
 
     {
@@ -16,7 +16,7 @@
         "descripcionCorta": "Lentes de sol media montura, marco metálico,color negro",
         "DescripcionLarga": "Lentes de sol, media montura, marco metálico, color negro con protección uv 400",
         "Precio": 28000, 
-        "Puntuación": "*****"
+        "Puntuación": "****"
     },
 
     {
